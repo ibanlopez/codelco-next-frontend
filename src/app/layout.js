@@ -8,7 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es-ES">
-      <body>{children}</body>
+      <body className="grid grid-cols-1 w-100vw max-w-screen-[1920px] overflow-x-hidden">
+        <header className="h-10 bg-red-400">Header</header>
+        <main className="min-h-[93vh]">{children}</main>
+        <footer className="h-10 bg-red-400 mt-auto">Footer</footer>
+      </body>
     </html>
   );
 }
