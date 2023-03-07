@@ -1,7 +1,9 @@
+import Main from '@/components/layout/main';
+
 export default function HomePage() {
   return (
-    <>
-      <p className="text-center">Main content here</p>
-    </>
+    <Main>
+      <p>Main content goes here</p>
+    </Main>
   );
 }
